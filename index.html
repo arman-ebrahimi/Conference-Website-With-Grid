@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>site-conference grid</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=0.8">
+
+	<style type="text/css">
+		body{
+			margin: 0;
+			text-transform: capitalize;
+		}
+		*{
+			box-sizing: border-box;
+		}
+		.header{
+			background-color: teal;
+			text-align: center;
+			padding: 60px 25px;
+		}
+		.h{
+			display: inline-block;
+			width: 45%;
+		}
+		.h-left{
+			color: white;
+			font-size: 3em;
+			line-height: 1em;
+			padding-left: 40px;
+			font-weight: 300;
+		}
+		.h-right{
+			line-height: 2em;
+			padding-right: 40px;
+		}
+		.align-l{
+			text-align: left;
+			display: inline-block;
+		}
+		.align-r{
+			text-align: right;
+			display: inline-block;
+		}
+		.h-right p{
+			font-family: georgia;
+			color: #333;
+		}
+		.h-right a{
+			text-decoration: none;
+			color: white;
+			font-size: 1.2em;
+			padding: 8px;
+			text-transform: uppercase;
+		}
+		.h-right a:hover{
+			color: #333;
+		}
+		.h-bottom{
+			font-weight: 300;
+			width: 70%;
+			margin: auto;
+		}
+		.h-bottom p{
+			font-size: 1.4em;
+			color: #fff;
+			line-height: 1.7em;
+		}
+		.h-bottom div{
+			font-size: 2.5em;
+			color: #333;
+		}
+		.h-bottom a{
+			text-decoration: none;
+			color: #fff;
+			font-size: 1.5em;
+			border:1px solid #333;
+			border-radius: 5px;
+			padding: 18px 25px;
+		}
+		.h-bottom a:hover{
+			background-color: #ddd;
+			color: #333;
+		}
+		.flex-box{
+			display: grid;
+			grid-template-columns: 33% 33% 33%;
+			grid-gap: 30px;
+			color: #666;
+			font-weight: 300;
+			width: 70%;
+			margin: auto;
+		}
+		.item img{
+			width: 100%;
+			height: 200px;
+			border-radius: 5px;
+		}
+		.item p:first-child{
+			color: teal;
+			font-size: 1.2em;
+		}
+		.item p:nth-last-child(2){
+			font-size: 1.5em;
+			color: teal;
+		}
+		.item p:last-child{
+			line-height: 1.5em;
+			font-size: 16px;
+		}
+		.footer{
+			background-color: teal;
+			padding: 40px 20px;
+			text-align: center;
+			font-weight: 300;
+			clear: both;
+		}
+		.f-right a{
+			text-decoration: none;
+			color: #eee;
+			padding: 0 5px;
+		}
+		.f-right a:hover{
+			color: #333;
+		}
+		.f{
+			display: inline-block;
+			width: 48%;
+			text-align: center;
+		}
+		.f-left{
+			color: #222;
+		}
+		@media screen and (max-width: 1260px){
+			.h-right a{
+				padding: 3px;
+			}
+		}
+		@media screen and (max-width: 992px){
+			.h-right a{
+				display: block;
+				padding: 15px;
+				text-align: center;
+				margin-top: 8px;
+				border-radius: 4px;
+				background-color: #ddd;
+				color: #444;
+			}
+			.h-right a:hover{
+				background-color: #444;
+				color: #ddd;
+			}
+			.h-top div:first-child{
+				vertical-align: middle;
+			}
+		}
+		@media screen and (max-width: 768px){
+			.flex-box{
+				grid-template-columns: 100%;
+			}
+		}
+	</style>
+</head>
+<body>
+<div class="header">
+	<div class="h-top">
+		<div class="h h-left"><div class="align-l">STYLES<br>CONFERENCE</div></div>
+		<div class="h h-right">
+			<div class="align-r">
+			  <p>saturday-august24-2020-tehran</p>
+			  <a href="#">home</a>
+			  <a href="#">speakers</a>
+			  <a href="#">schedule</a>
+			  <a href="#">location</a>
+			  <a href="#">register</a>
+		    </div>
+		</div>
+	</div>
+	<br><br><br>
+	<div class="h-bottom">
+		<div>To learn more about web programming, join us.</div>
+		<p>Every year, a professional association of Iranian programmers discusses the progress made during the year.
+	    They are looking for Iran's progress in the field of web programming worldwide.</p><br><br>
+	    <a href="#">register now</a>
+	</div>
+</div>
+<br>
+<div class="flex-box">
+	<div class="item">
+		<p>speakers</p>
+		<a href="#"><img src="images_images_Spring95_Happy_programming_day_95-scaled.jpg"></a>
+		<p>best iranians speakers</p>
+		<p>To choose your favorite speaker among the selected people, please take part in our site poll.</p>
+	</div>
+	<div class="item">
+		<p>schedule</p>
+		<a href="#"><img src="عکاسی-از-سمینار‌ها-و-کنفرانس‌ها-3.jpg"></a>
+		<p>three days suggested</p>
+		<p>Choose a day that you think is a better time between our three suggested days.</p>
+	</div>
+	<div class="item">
+		<p>lacation</p>
+		<a href="#"><img src="2885352.jpg"></a>
+		<p>the shahr theatre</p>
+		<p>A warm and friendly place to think and discuss the latest advances in web programming.</p>
+	</div>
+</div>
+<br><br>
+<div class="footer">
+	<div class="f f-left">&copy;styles conference</div>
+	<div class="f f-right">
+	    <a href="#">home</a>
+	    <a href="#">speakers</a>
+        <a href="#">schedule</a>
+		<a href="#">location</a>
+	    <a href="#">register</a>
+	</div>
+</div>
+</body>
+</html>
